@@ -54,7 +54,7 @@ GET     /authenticate/:provider/denied     controllers.Signup.oAuthDenied(provid
 # --------------------------------------------------------------------------
 
 
-# Picture manager
+# page for tests on photos.
 GET     /photos/manager              controllers.Photos.manager
 
 

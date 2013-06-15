@@ -1,11 +1,13 @@
-
+<!-- a page for tests on photos -->
 
 
 <pre id="returned_content">Results</pre>
 
 
 <input type="text" id="userId" placeholder="user email" value="antonio.digangi@@opendeusto.es" style="margin-left: 30px;">
-    <br><small style="margin-left: 30px;"> this is the user mail, to mock the user making the request (provisionally). If empty uses the user logged in</small>
+    <br><small style="margin-left: 30px;"> this is the user mail, to mock the user making the request. (If empty the server recognizes the user logged in).
+    To use the mock here, please de-comment the relevant piece of code in the method PhotosREST.getRequestingUser().
+</small>
 
 @helper.form(action = routes.PhotosREST.newPhoto(), 'enctype -> "application/json", 'name -> "meta_data_form") {
 

@@ -10,9 +10,9 @@ import play.data.Form;
 
 import static play.libs.Json.toJson;
 
+
+//'photo manager' is just a page for tests on photos
 public class Photos extends Controller {
-
-
 
     public static Result manager(){
         return ok(views.html.photo_manager.render());

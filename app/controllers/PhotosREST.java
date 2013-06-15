@@ -800,6 +800,9 @@ public class PhotosREST extends Controller {
         private static User getRequestingUser(){
 
             User user = null;
+
+            /* if this code is enabled, you can mock the user making the request
+            by sending the query parameter user_email populated with the user's mail address
             String userEmail = request().getQueryString(QUERYSTRING_USERID);
 
             Logger.info("user sent querystring with '" + QUERYSTRING_USERID + "' = " + userEmail);
@@ -813,6 +816,8 @@ public class PhotosREST extends Controller {
                 }
             }
             Logger.info("play authenticate...");
+            */
+
             user = Application.getLocalUser(session());
             if(user == null){
                 Logger.info("user not found");
