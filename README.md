@@ -1,31 +1,5 @@
+## uMappin
 
+Master Degree end project - Social/Mapping network with openstreetmaps.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Play Authenticate sample Java application.
+Deusto University (Bilbao, Spain).
